@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+    max-width: 2880px;
+	background-color: #fff;
+    font-family: "Avenir Next", serif;
+}
+
+nav {
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */ 
+    /*background-color: transparent;*/
+    overflow: none;
+    white-space: nowrap;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2; /* Sit on top */
+    top: 0;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    min-width: 5%;
+    border-bottom: medium solid transparent;    
+}
+
+nav a:hover {
+    /*color: #4A90E2;*/
+    /*background-image: url("../images/navHover.png");*/
+    border-bottom: medium solid #fff;
+}
+
+header {
+    height: 90%;
+    position: relative;
+    
+}
+
+header>h1 {
+    font-size: 10vw;
+    position: absolute;
+    top:10%;
+    left: 10%;
+    right: 10%;
+}
+
+
+svg {
+    margin: 0px;
+    bottom: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.cta {
+    position: absolute;
+    top:40%;
+    right: 10%;
+    text-decoration: none;
+    z-index: 1;
+    
+}
+
+.cta svg:hover circle, text {
+    cursor: pointer;
+}
+
+.cta svg:hover circle {
+    fill: #D0021B;
+}
+
+.error {color: #FF0000;}
+.success {color: #7ED321;}
+
+#video {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: auto; 
+    height: 600px;
+}
+
+#myVideo {  
+    width: auto; 
+    height: 100%;
+}
+
+.video-content {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    right: 25%;
+    color: #fff;
+}
+
+.video-content>h1{
+    font-size: 6vw;
+}
+
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.text-centre {
+    text-align: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card {
+    margin-bottom: 5%;
+}
+
+.blue {
+    background-color: #4A90E2;
+}
+
+.green {
+    background-color: #7ED321;
+}
+
+.yellow {
+    background-color: #F8E71C;
+}
+
+.title {
+    color: #fff;
+    margin-bottom: 0px;
+    padding: 20px 10px;
+}
+
+.title h4 {
+    margin: 0px;
+}
+
+.contents {
+    flex: 1 0 auto;
+    background-color: #F5F5F5;
+    margin-top: 0px;
+    padding: 10% 10% 20%;
+}
+
+i {
+    font-family: "Arial Rounded MT Bold", Arial, serif;
+    border: solid #333;
+    border-width: 0 3px 3px 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+  
+    display: inline-block;
+    padding: 3px;
+    margin: 2px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#form-results {
+    padding-left: 10%;
+    padding-bottom: 20%;
+}
+
+.placeholder {
+    padding: 5%;
+    width: 20%;
+    margin: 2%;
+    background-color: #333;
+}
+
+.button {
+    -webkit-appearance: none;
+    margin-left: 20px;
+    background-color: #D8D8D8;
+    color: #333;
+    padding: 12px 24px;
+    border: 2px solid #D8D8D8;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4A90E2;
+    color: #fff;
+    border-color: #4A90E2;
+}
+
+.form input[type=text], .form textarea {
+    -webkit-appearance: none;
+    padding: 6px 12px;
+    background-color: #6D6D6D;
+    border: 2px solid #6D6D6D;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    width: 100%;
+}
+
+.form input[type=text]:focus, .form textarea:focus {
+    background-color: #D8D8D8;
+    border: 2px solid #D8D8D8;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: -20% 0;
+    padding: 0;
+    border: 1px solid #888;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+
+    header {
+        height: 80%;
+    }
+
+    #myVideo {  
+        width: 100%; 
+        height: auto;
+    }
+
+    .cta {
+        top:50%;
+        right: 3%;
+    }
+
+    .contents {
+        padding: 10% 20% 30%;
+    }
+
+    .modal-content {
+        margin: -5% auto;
+        width: 80%;
+    }
+
+
+@media only screen and (min-width: 800px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+
+
+}

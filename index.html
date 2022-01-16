@@ -1,7 +1,426 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-AU">
+<head>
+    <title>Andrew McInnes Portfolio - Web/Graphic/UI/UX Design</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Brisbane based Web and Graphic Designer with
+    a passion for User Experience and User Interfaces. This portfolio showcases my
+    current work.">
+    <meta name="author" content="Andrew McInnes">
+    <meta name="google-site-verification" content="qFG33keN3VMP0AR3qd4amir0ZrQaT82dZ3pSjxt4pBY" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon"
+    type="image/png"
+    href="https://acmcinnes.com.au/images/favicon.png">
+
+    <!--<link rel="stylesheet" href="css/template.css">-->
+    <link rel="stylesheet" href="css/landing.css">
+    <!-- removing CAPTCHA until domain is sorted
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    -->
+</head>
 <body>
-  <h1>Hello World</h1>
-  <p>I'm hosted with GitHub Pages.</p>
+    <!-- header navigation -->
+    <nav class="flex-row">
+        <a href="#home">Home</a>
+        <a href="#skills-top">Skills</a>
+        <a href="#about-top">About</a>
+        <a href="#portfolio-top">Portfolio</a>
+        <a href="#contact-top">Contact</a>
+    </nav>
+    <!-- banner slider -->
+    <header id="home" class="flex-column">
+        <p class="slider-top">Andrew McInnes</p>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <p class="slideText">WEB DESIGNER</p>
+            </div>
+            <div class="mySlides fade">
+                <p class="slideText">GRAPHIC DESIGNER</p>
+            </div>
+            <div class="mySlides fade">
+                <p class="slideText">FRONT END DESIGNER</p>
+            </div>
+            <div class="mySlides fade">
+                <p class="slideText">UI/UX DESIGNER</p>
+            </div>
+        </div>
+        <div class="flex-row flex-centre slider-bottom">
+            <div class="flex-column">
+                <a href="#portfolio-top" class="header-btn">MY PORTFOLIO</a>
+            </div>
+            <div class="flex-column">
+                <a href="#contact-top" class="header-btn-outline">CONTACT ME</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile menu icon -->
+    <div class="cta">
+        <svg id="modal-toggle" class="rotate-open" width="50" height="50">
+            <circle cx="25" cy="25" r="25" fill="#4A90E2" />
+            <text fill="#fff"  font-size="48" x="9" y="40">&times;</text>
+        </svg>
+    </div>
+    <div id="cta-modal" class="modal">
+        <!-- mobile menu content -->
+        <div class="modal-content">
+            <a class="mobile-nav link nav-1" onclick="closeModal()" href="#home">Home</a>
+            <a class="mobile-nav link nav-2" onclick="closeModal()" href="#skills-top">Skills</a>
+            <a class="mobile-nav link nav-3" onclick="closeModal()" href="#about-top">About</a>
+            <a class="mobile-nav link nav-4" onclick="closeModal()" href="#portfolio-top">Portfolio</a>
+            <a class="mobile-nav link nav-5" onclick="closeModal()" href="#contact-top">Contact</a>
+        </div>
+    </div>
+
+    <!-- anchor for navigation -->
+    <div id="skills-top" class="row">
+        <div class="text-centre">
+            <p>Check out my portfolio</p>
+            <a href="#portfolio-top"><i class="down i-blk"></i></a>
+        </div>
+        <h2 class="pad-left col-12">Skills</h2>
+    </div>
+
+    <div id="skills" class="text-centre">
+        <div class="flex-row flex-centre col-12">
+            <div class="flex-column">
+                <img class="skills-img" src="images/logo-web-x2.png" alt="web design logo">
+                <p class="s-hidden">HTML / CSS / JAVASCRIPT</p>
+                <p class="m-hidden">HTML <br> CSS <br> JAVASCRIPT</p>
+            </div>
+            <div class="flex-column">
+                <img class="skills-img" src="images/logo-graphics-x2.png" alt="graphic design logo">
+                <p class="s-hidden">SKETCH / ADOBE</p>
+                <p class="m-hidden">SKETCH <br> ADOBE <br><br></p>
+            </div>
+            <div class="flex-column">
+                <img class="skills-img" src="images/logo-db-x2.png" alt="php/database logo">
+                <p class="s-hidden">PHP / MySQL</p>
+                <p class="m-hidden">PHP <br> MySQL<br><br></p>
+            </div>
+            <div class="flex-column">
+                <img class="skills-img" src="images/logo-ui-x2.png" alt="prototype logo">
+                <p class="s-hidden">UI / UX / PROTOTYPING</p>
+                <p class="m-hidden">UI / UX <br> PROTOTYPING<br><br></p>
+            </div>
+        </div>
+        <p>Each Project is # tagged with the appropriate skills</p>
+    </div>
+
+    <div id="about-top" class="row dark">
+        <h2 class="pad-left col-12">About</h2>
+    </div>
+    <div id="about" class="dark">
+        <div class="text-block text-block-plus">
+            <p>
+                Hi, my name is Andrew, I'm an Information Technology Graduate with an interest in User
+                Design and Interfaces. I graduated from the University of Queensland with a major in
+                Human Computer Interaction, which is a fancy way of saying I created and tested products
+                through prototyping (paper/wireframing) tested these (user/storyboarding) and deployed
+                (web based usually) a final high-fidelity prototype or final product.
+            </p>
+            <p>
+                Throughout my studies I have been part of a number of projects that have helped me hone my
+                technical skills, including Graphic Design, Web Design and UI/UX Design. After graduating I
+                have continued to work to improve and keep up to date with current technologies.
+            </p>
+            <div class="text-centre">
+                <p>Please view below all my completed university projects as well as my current work</p>
+                <a href="#portfolio-top"><i class="down"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio-top"></div>
+    <div class="portfolio">
+        <div class="main-heading">
+            <p>PORTFOLIO</p>
+        </div>
+        <div class="sub-heading">
+            <p>Web Design</p>
+        </div>
+        <div class="col-12 no-space relative">
+            <div class="flex-row no-space">
+                <div class="col-4 large-screen condor-panel centre-panel">
+                    <p>CONDOR MIGRATION AGENCY</p>
+                    <p>
+                        I have recently finished working on a Wordpress site for a local Migration Agency. The company
+                        went through a rebranding and wanted a fresh new website to reflect this. Building the site on Wordpress
+                        had its advantages. I was quickly able to add content to the site, then decide on a theme that worked well
+                        with the clients needs. A focus on testimonials with an impression of a skilled and competent team was to be
+                        the focus, as well as being easily contactable.
+                    </p>
+                    <p>
+                        Using Wordpress I was able to add features through the use of plug ins, even add or edit custom HTML & CSS through
+                        the use of a child theme that I created and linked to the main parent theme.
+                    </p>
+                    <p class="blue">#Wordpress #HTML #CSS #Themes #Plugins</p>
+                    <p>
+                        <a class="condor-outline" href="//condormigration.com">VIEW PAGE</a><br>
+                        *External Website - Will not link back to Portfolio
+                    </p>
+                </div>
+
+                <div class="col-8 condor-panel relative">
+                    <img id="wp-img" src="images/condor-mashup.png" alt="wordpress graphic">
+                </div>
+
+                <div class="col-4 small-screen condor-panel centre-panel">
+                    <p>CONDOR MIGRATION AGENCY</p>
+                    <p>
+                        I have recently finished working on a Wordpress site for a local Migration Agency. The company
+                        went through a rebranding and wanted a fresh new website to reflect this. Building the site on Wordpress
+                        had its advantages. I was quickly able to add content to the site, then decide on a theme that worked well
+                        with the clients needs. A focus on testimonials with an impression of a skilled and competent team was to be
+                        the focus, as well as being easily contactable.
+                    </p>
+                    <p>
+                        Using Wordpress I was able to add features through the use of plug ins, even add or edit custom HTML & CSS through
+                        the use of a child theme that I created and linked to the main parent theme.
+                    </p>
+                    <p class="blue">#Wordpress #HTML #CSS #Themes #Plugins</p>
+                    <p><a class="condor-outline" href="//condormigration.com">VIEW PAGE</a></p>
+                    <p>External Website - Will not link back to Portfolio</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 no-space grey relative">
+            <div class="flex-row no-space">
+                <div class="col-8 bluesquare-panel relative">
+                    <img class="responsive-img flex flex-centre" src="images/bluesquare-mashup.png" alt="bluesquare logo">
+                </div>
+
+                <div class="col-4 bluesquare-panel centre-panel">
+                    <p>BLUESQUARE STORE</p>
+                    <p>
+                        After university I have kept busy creating websites and graphics for fun, while doing some
+                        casual work maintaining websites for people.
+                    </p>
+                    <p>
+                        I have created a few sites showing my work, the first is a mock store front using PHP
+                        and MySQL to grab items from a file, load them to a database then grab items depending on
+                        the users search queries. All the calls to the server are done with AJAX so the page doesn't
+                        have to reload to show the search results. The website is fully functional up to the checkout
+                        process. I'm still working on the shopping cart, at the moment you can add items or drop the entire
+                        cart. From there dropping individual items, adding quantities and a mock payment screen are planned
+                    </p>
+                    <div id="html-pointer"></div>
+                    <p>This site is custom built by me.</p>
+                    <p class="blue">#HTML #CSS #JavaScript #PHP #MySQL</p>
+                    <p><a class="bluesquare-outline" href="/bluesquare/">VIEW PAGE</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 no-space relative">
+            <div class="flex-row no-space">
+                <div class="col-4 large-screen z-up condor-panel centre-panel">
+                    <p>HOLIDAYS+</p>
+                    <p>
+                        The second website I have made is a mock travel agency, built on Bootstrap 4. Using a framework such
+                        as Bootstrap or Material Design can greatly improve website creation. One draw back though is that using
+                        the default CSS means your website will look like a copy of any other website built off the framework.
+                        Therefor it can always benefit from some custom CSS styling as well, to make it stand out.
+                    </p>
+                    <p>
+                        The travel website uses a number of bootstrap components such as the carousel and card grids to easily
+                        position and display content.
+                    </p>
+                    <p class="blue">#Bootstrap4 #HTML #CSS</p>
+                    <p><a class="holiday-outline" href="/holidaysplus/">VIEW PAGE</a></p>
+                </div>
+
+                <div id="hp-panel" class="col-8 condor-panel relative">
+                    <img id="hp-img" src="images/holidayspluslayout.png" alt="holidaysplus website">
+                    <!--
+                    <img id="accom-sm" class="img-scale absolute" src="images/accommodation-sm.png" alt="holidaysplus website">
+                    <img id="cruise-sm" class="img-scale absolute" src="images/cruise-sm.png" alt="holidaysplus website">
+                    <img id="cruise-md" class="img-scale absolute" src="images/cruise-md.png" alt="holidaysplus website">
+                    <img id="accom-md" class="img-scale absolute" src="images/accommodation-md.png" alt="holidaysplus website">
+                    <img id="package-lg" class="img-scale absolute" src="images/packages-lg.png" alt="holidaysplus website">
+                    <img id="landing-lg" class="img-scale absolute" src="images/landing-lg.png" alt="holidaysplus website">
+                    <img id="landing-sm" class="img-scale absolute" src="images/landing-sm.png" alt="holidaysplus website">
+                    -->
+                </div>
+
+                <div class="col-4 small-screen condor-panel centre-panel">
+                    <p>HOLIDAYS+</p>
+                    <p>
+                        The second website I have made is a mock travel agency, built on Bootstrap 4. Using a framework such
+                        as Bootstrap or Material Design can greatly improve website creation. One draw back though is that using
+                        the default CSS means your website will look like a copy of any other website built off the framework.
+                        Therefor it can always benefit from some custom CSS styling as well, to make it stand out.
+                    </p>
+                    <p>
+                        The travel website uses a number of bootstrap components such as the carousel and card grids to easily
+                        position and display content.
+                    </p>
+                    <p class="blue">#Bootstrap4 #HTML #CSS</p>
+                    <p><a class="holiday-outline" href="/holidaysplus/">VIEW PAGE</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 no-space grey relative">
+            <div class="flex-row no-space">
+                <div class="col-8 graphics-panel relative">
+                    <img id="graphic-img" src="images/graphicportfolio2.png" alt="graphics Portfolio" style="align-self: center">
+                </div>
+
+                <div class="col-4 graphics-panel centre-panel">
+                    <p>DESIGN PORTFOLIO</p>
+                    <p>
+                        This website showcases some of my graphic design work from a course at university. First I made
+                        graphical representations of facts from the Harper's Magazine Index. These facts would include ridiculous
+                        numbers that are hard for the brain to visualise, by simplifying the number and comparing it to something
+                        most people are familiar with makes the fact far easier to understand.
+                    </p>
+                    <p>
+                        Next an Infographic of a complex process. Designed to be printed out, this Infographic showcases
+                        different sci-fi ships and how they are able to fly through space faster than lightspeed.
+                        Finally I created a magazine showcasing all the graphics that were created for the course, as well
+                        as some of my inspirations and interests.
+                    </p>
+                    <p>This site uses Bootstrap 4 as the building blocks as well as some of my own custom CSS and Javascript.</p>
+                    <p class="blue">#HTML #CSS #JavaScript #Bootstrap #JQuery #Graphics #Illustrator #Print #InDesign</p>
+                    <a class="graphics-outline" href="//acmcinnes.azurewebsites.net">VIEW PAGE</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 no-space relative">
+            <div class="flex-column flex-centre no-space">
+                <p>SANDBOX</p>
+                <p>Another Design Portfolio - currently being updated</p>
+                <a class="mcinnes-outline" href="/mcinnesdesign">VIEW PAGE</a>
+            </div>
+        </div>
+
+        <div class="sketch">
+            <div id="sketch-pointer" class="flex-row col-12 no-space">
+                <div class="col-6 col-m-6 no-space">
+                    <img class="pad-left s-img" src="images/sketch-logo-light@2x.png" alt="sketch logo">
+                    <div class="text-block">
+                        <p>
+                            Using the Sketch App is great for creating mock designs and prototyping interfaces,
+                            with a wide array of plugins, if you need something done, Sketch can handle it.<br><br>
+                            Mock up Travel Website, all assets created in Sketch.
+                        </p>
+                        <p class="blue">#Sketch #Prototyping #Interface #Graphics #UI/UX</p>
+                    </div>
+                </div>
+                <div class="col-6 col-m-6 no-space">
+                    <img id="sketch-img" src="images/sketch.png" alt="sketch graphic">
+                </div>
+            </div>
+        </div>
+
+        <div class="text-block">
+            <h4>University Projects</h4>
+            <h4 class="pad-left">Floor Based Navigation System (Final Year Project) - 2016</h4>
+            <p>
+                For our final year project we were tasked with creating a system that took input from
+                a physical interaction, such as touch or motion. Our team decided to solve the issue of
+                navigating around an inclosed space such as a shopping centre or town square.
+            </p>
+            <p>
+                Everyone has seen those kiosks with the touch screens and the map, search a store or place
+                and get instructions which you either have to remember or take a picture of, what if the
+                system could guide you the rest of the way?
+            </p>
+            <p>
+                This was the premise behind our project, a floor based information display that a user could
+                walk onto, select their destination by tapping their foot on it, and be guided to their location
+                through a physical guide such as LED light tracks or through their phone by scanning a QR code.
+            </p>
+            <p>
+                As well as planning and testing, my main responsibility for this project was creating the tracking
+                software that would path find between the points of interest we had chosen.
+            </p>
+            <p class="blue">#Interface #UI/UX #Prototyping #User Testing #Software</p>
+
+            <h4 class="pad-left">Augmented Reality Obstacle Course/Card Game - 2015</h4>
+            <p>
+                For this project we were required to create an Augmented Reality Experience, meaning when you launched
+                the application and viewed your surroundings through the phone camera, 3D objects will be overlaid onto
+                the video for you to interact with.
+            </p>
+            <p>
+                This was split into two parts, initial concept - were our team came up with the initial experience and
+                started to implement basic functionality. My first project was a card game that would display a 3D model
+                of the card character on screen, when the camera picked up the physical card.
+            </p>
+            <p>
+                The second part was completing a project another team had already started. For this part our team was
+                to complete an Augmented Reality Obstacle Course, were users would have a physical path to follow while
+                solving or avoiding obstacles on their phone camera.
+            </p>
+            <p class="blue">#Prototyping #User Testing #Software</p>
+
+            <h4 class="pad-left">Online Roleplaying Game - 2014</h4>
+            <p>
+                One of the first major projects I was part of, the whole class (~100 students) was tasked with creating
+                an online computer game. We were split into teams to work on seperate parts of the application, all the
+                code was managed on GitHub, so each team would fork their own version, work on their part, then integrate
+                back into the main code base. Ironing out bugs with other teams and trying not to break everything.
+            </p>
+            <p>
+                Our Team was responsible for creating a player safehouse, my part was creating the graphical assets
+                and sprites that would be displayed on screen when the player entered the house.
+            </p>
+            <p class="blue">#Graphics #Testing #Software</p>
+        </div>
+    <!-- /portfolio div -->
+    </div>
+
+    <div id="contact-top" class="dark">
+        <div class="row">
+            <h2 class="pad-left col-12">Contact</h2>
+        </div>
+        <div id="contact">
+            <p class="pad-left">Currently unavailable</p>
+            <!--
+            <form class="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>#contact-top">
+                <label for="name">Name:</label><span class="error">* <?php echo $nameErr;?></span><br>
+                <input type="text" name="name" value="<?php echo $name;?>">
+
+                <br><br>
+                <label for="email">E-mail:</label><span class="error">* <?php echo $emailErr;?></span><br>
+                <input type="text" name="email" value="<?php echo $fromEmail;?>">
+
+                <br><br>
+                <label for="comment">Comment:</label><span class="error">* <?php echo $commentErr;?></span><br>
+                <textarea placeholder=" " name="comment" rows="12"><?php echo $comment;?></textarea>
+
+                <br><br>
+
+                <div class="captcha-container">
+                    <div class="g-recaptcha" data-sitekey="6LfeV0cUAAAAACOZw6rn7haWKhLOiHCp4m501gcX"></div>
+                    <input class="button" type="submit" name="submit" value="Send" style="align-self: center">
+                </div>
+            </form>
+            <div class="row">
+                <h4 class="search-header blue col-12"><?php echo $sentMsg;?></h4>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <footer>
+        <p>Website created and built by Andrew McInnes</p>
+        <p>deployed using</p>
+        <a href="https://cloud.google.com"><img src="images/gcp.png" alt="Google Cloud Platform"></a>
+        <a href="https://bitnami.com/stack/lamp"><img src="images/lamp.png" alt="LAMP Stack"></a>
+        <p>Google Cloud Platform + LAMP Stack</p>
+
+        <p><a class="link blue" href="#home">Back to Top</a></p>
+        <p class="footer-padding">&copy <span id="year"></span> - ABN: 32 205 159 015</p>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/landing.js"></script>
+
 </body>
 </html>
