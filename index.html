@@ -120,8 +120,8 @@
             </p>
             <p>
                 When I'm not working with our Developer Partners I'm improving and building out our library of online store 'themes' -
-                built on a combination of Bootstrap, jQuery, and general HTML/CSS/JavaScript. With a passion for Front End Development work,
-                this extends into my free time where I am always looking for an opportunity to hone by Web Development skills.
+                built on a combination of Bootstrap, jQuery, and general HTML/CSS/JavaScript. With a passion for Frontend Development work,
+                this extends into my free time where I am always looking for an opportunity to hone my Web Development skills.
             </p>
             <p>
                 Most recently I've started looking into React, a component based JavaScript framework that allows page layouts to be quickly built -
@@ -274,7 +274,12 @@
                 </div>
 
                 <div id="hp-panel" class="col-8 condor-panel relative">
-                    <img id="hp-img" src="images/holidayspluslayout.png" alt="holidaysplus website">
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="images/holidayspluslayout_s.webp">
+                        <source media="(max-width: 992px)" srcset="images/holidayspluslayout_m.webp">
+                        <img id="hp-img" src="images/holidayspluslayout_l.webp" alt="holidaysplus website">
+                    </picture>
+
                     <!--
                     <img id="accom-sm" class="img-scale absolute" src="images/accommodation-sm.png" alt="holidaysplus website">
                     <img id="cruise-sm" class="img-scale absolute" src="images/cruise-sm.png" alt="holidaysplus website">
