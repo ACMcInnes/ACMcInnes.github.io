@@ -399,30 +399,24 @@
         </div>
         <div id="contact">
             <p class="pad-left">Currently unavailable</p>
-            <!--
-            <form class="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>#contact-top">
-                <label for="name">Name:</label><span class="error">* <?php echo $nameErr;?></span><br>
-                <input type="text" name="name" value="<?php echo $name;?>">
+            <form class="contact-form" method="POST" action="#contact-top">
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" value="" disabled>
 
                 <br><br>
-                <label for="email">E-mail:</label><span class="error">* <?php echo $emailErr;?></span><br>
-                <input type="text" name="email" value="<?php echo $fromEmail;?>">
+                <label for="email">E-mail:</label><br>
+                <input type="text" name="email" value="" disabled>
 
                 <br><br>
-                <label for="comment">Comment:</label><span class="error">* <?php echo $commentErr;?></span><br>
-                <textarea placeholder=" " name="comment" rows="12"><?php echo $comment;?></textarea>
+                <label for="comment">Comment:</label><br>
+                <textarea placeholder=" " name="comment" rows="12" disabled></textarea>
 
                 <br><br>
 
                 <div class="captcha-container">
-                    <div class="g-recaptcha" data-sitekey="6LfeV0cUAAAAACOZw6rn7haWKhLOiHCp4m501gcX"></div>
-                    <input class="button" type="submit" name="submit" value="Send" style="align-self: center">
+                    <input class="button" type="submit" name="submit" value="Send" style="align-self: center" disabled>
                 </div>
             </form>
-            <div class="row">
-                <h4 class="search-header blue col-12"><?php echo $sentMsg;?></h4>
-            </div>
-            -->
         </div>
     </div>
 
@@ -433,6 +427,7 @@
         <p>GitHub Pages</p>
 
         <p><a class="link blue" href="#home">Back to Top</a></p>
+        <button onclick="themeToggle()">Toggle Colour Scheme</button>
         <p class="footer-padding">&copy <span id="year"></span> - ABN: 32 205 159 015</p>
     </footer>
 
