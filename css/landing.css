@@ -4,12 +4,18 @@ body {
   --bg-colour: #fff;
   --banner-colour: #3A95FF;
   --alt-bg: #333;
+  --panel-bg: #F2F2F2;
 }
 body.dark-theme {
   --text-colour: #eee;
   --bg-colour: #333;
   --banner-colour: #235690;
   --alt-bg: #404040;
+  --panel-bg: #404040;
+}
+
+body.dark-theme img {
+  filter: brightness(.8) contrast(1.2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,12 +25,20 @@ body.dark-theme {
     --bg-colour: #333;
     --banner-colour: #235690;
     --alt-bg: #404040;
+    --panel-bg: #404040;
+  }
+  img {
+    filter: brightness(.8) contrast(1.2);
   }
   body.light-theme {
     --text-colour: #333;
     --bg-colour: #fff;
     --banner-colour: #3A95FF;
     --alt-bg: #333;
+    --panel-bg: #F2F2F2;
+  }
+  body.light-theme img {
+    filter: none;
   }
 }
 
@@ -389,6 +403,13 @@ header>p {
     cursor: pointer;
 }
 
+.button:disabled {
+    pointer-events: none;
+    background-color: none;
+    border: none;
+    text-decoration: line-through;
+}
+
 .button:hover {
     background-color: #4A90E2;
     color: #fff;
@@ -567,6 +588,10 @@ i {
     justify-content: center;
 }
 
+.alt-panel {
+    background-color: var(--panel-bg);
+}
+
 .graphics-panel {
     /*background-color: #FAFAFA;*/
 }
@@ -574,7 +599,7 @@ i {
 
 .condor-panel {
     /*background-color: #D9A335;*/
-    color: #333;
+    /*color: #333;*/
 }
 
 .bluesquare-panel {
