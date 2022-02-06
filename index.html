@@ -85,22 +85,42 @@
     <div id="skills" class="text-centre">
         <div class="flex-row flex-centre col-12">
             <div class="flex-column">
-                <img class="skills-img" src="images/logo-web-x2.png" alt="web design logo">
+                <img class="skills-img"
+                  src="images/logo_web.webp"
+                  srcset="images/logo_web.webp 1x,
+                  images/logo_web@2x.webp 2x"
+                  width="400" height="400" loading="lazy" alt="web design logo"
+                >
                 <p class="s-hidden">HTML / CSS / JAVASCRIPT</p>
                 <p class="m-hidden">HTML <br> CSS <br> JAVASCRIPT</p>
             </div>
             <div class="flex-column">
-                <img class="skills-img" src="images/logo-graphics-x2.png" alt="graphic design logo">
+                <img class="skills-img"
+                  src="images/logo_graphics.webp"
+                  srcset="images/logo_graphics.webp 1x,
+                  images/logo_graphics@2x.webp 2x"
+                  width="400" height="400" loading="lazy" alt="graphic design logo"
+                >
                 <p class="s-hidden">SKETCH / ADOBE</p>
                 <p class="m-hidden">SKETCH <br> ADOBE <br><br></p>
             </div>
             <div class="flex-column">
-                <img class="skills-img" src="images/logo-db-x2.png" alt="php/database logo">
+                <img class="skills-img"
+                  src="images/logo_db.webp"
+                  srcset="images/logo_db.webp 1x,
+                  images/logo_db@2x.webp 2x"
+                  width="400" height="400" loading="lazy" alt="php/database logo"
+                >
                 <p class="s-hidden">PHP / MySQL</p>
                 <p class="m-hidden">PHP <br> MySQL<br><br></p>
             </div>
             <div class="flex-column">
-                <img class="skills-img" src="images/logo-ui-x2.png" alt="prototype logo">
+                <img class="skills-img"
+                  src="images/logo_ui.webp"
+                  srcset="images/logo_ui.webp 1x,
+                  images/logo_ui@2x.webp 2x"
+                  width="400" height="400" loading="lazy" alt="prototype logo"
+                >
                 <p class="s-hidden">UI / UX / PROTOTYPING</p>
                 <p class="m-hidden">UI / UX <br> PROTOTYPING<br><br></p>
             </div>
@@ -145,27 +165,13 @@
 
         <div class="col-12 no-space relative">
             <div class="flex-row no-space">
-                <div class="col-4 large-screen condor-panel centre-panel">
-                    <p>REACT SANDBOX</p>
-                    <p>
-                        I decided to learn React over other JavaScript frameworks because of it's popularity
-                        and continued improvements over the years. Recent additions such as Hooks has greating improved
-                        the dynamic components that React and other JavaScript frameworks are known for.
-                    </p>
-                    <p>
-                        This is still a work in progress but the end goal is to create a responsive and fun experience for
-                        any visitors. Collecting data supplied and rendering that in exciting ways. The sandbox also utilises
-                        a dark mode toggle which takes the visitors display preference into account on first visit.
-                    </p>
-                </div>
-
                 <div class="col-8 condor-panel relative">
                     <p class="blue">#React #JavaScript #JSX #CSS in JavaScript</p>
                     <p><a class="condor-outline" href="//mcinnes.design">VIEW PAGE</a></p>
                     <p>*External Website</p>
                 </div>
 
-                <div class="col-4 small-screen condor-panel centre-panel">
+                <div class="col-4 condor-panel centre-panel">
                     <p>REACT SANDBOX</p>
                     <p>
                         I decided to learn React over other JavaScript frameworks because of it's popularity
@@ -208,7 +214,7 @@
                         <source media="(max-width: 650px)" srcset="images/condor_mashup_sm.webp 1x, images/condor_mashup_sm@2x.webp 2x">
                         <source media="(max-width: 1400px)" srcset="images/condor_mashup_md.webp 1x, images/condor_mashup_md@2x.webp 2x">
                         <source media="(min-width: 1401px)" srcset="images/condor_mashup_lg.webp 1x, images/condor_mashup_lg@2x.webp 2x">
-                        <img id="wp-img" src="images/condor_mashup_lg.png" alt="wordpress graphic">
+                        <img id="wp-img" src="images/condor_mashup_lg.png" width="1440" height="722" loading="lazy" alt="wordpress graphic">
                     </picture>
                 </div>
             </div>
@@ -265,7 +271,7 @@
                         <source media="(max-width: 650px)" srcset="images/holidaysplus_layout_sm.webp 1x, images/holidaysplus_layout_sm@2x.webp 2x">
                         <source media="(max-width: 1400px)" srcset="images/holidaysplus_layout_md.webp 1x, images/holidaysplus_layout_md@2x.webp 2x">
                         <source media="(min-width: 1401px)" srcset="images/holidaysplus_layout_lg.webp 1x, images/holidaysplus_layout_lg@2x.webp 2x">
-                        <img id="hp-img" src="images/holidaysplus_layout_lg.png" alt="holidaysplus website">
+                        <img id="hp-img" src="images/holidaysplus_layout_lg.png" width="1214" height="764" loading="lazy" alt="holidaysplus website">
                     </picture>
 
                     <!--
@@ -319,7 +325,11 @@
         <div class="sketch">
             <div id="sketch-pointer" class="flex-row col-12 no-space">
                 <div class="col-6 col-m-6 no-space">
-                    <img class="pad-left s-img" src="images/sketch-logo-light@2x.png" alt="sketch logo">
+                    <picture>
+                        <source srcset="images/sketch-logo-dark.png" media="(prefers-color-scheme: dark)" />
+                        <source srcset="images/sketch-logo-light.png" media="(prefers-color-scheme: light)" />
+                        <img class="pad-left s-img" src="images/sketch-logo-light.png" width="2181" height="768" loading="lazy" alt="sketch logo">
+                    </picture>
                     <div class="text-block">
                         <p>
                             Using the Sketch App is great for creating mock designs and prototyping interfaces,
@@ -330,7 +340,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-m-6 no-space">
-                    <img id="sketch-img" src="images/sketch.png" alt="sketch graphic">
+                    <img id="sketch-img" src="images/sketch.png" width="768" height="1024" loading="lazy" alt="sketch graphic">
                 </div>
             </div>
         </div>
@@ -423,7 +433,13 @@
     <footer>
         <p>Website created and built by Andrew McInnes</p>
         <p>deployed using</p>
-        <a href="https://github.com/ACMcInnes/ACMcInnes.github.io"><img src="images/github.png" alt="My GitHub Repo"></a>
+        <a href="https://github.com/ACMcInnes/ACMcInnes.github.io">
+            <picture>
+                <source srcset="images/github_dark.png" media="(prefers-color-scheme: dark)" />
+                <source srcset="images/github_light.png" media="(prefers-color-scheme: light)" />
+                <img src="images/github_light.png" width="120" height="120" loading="lazy" alt="My GitHub Repo">
+            </picture>
+        </a>
         <p>GitHub Pages</p>
 
         <p><a class="link blue" href="#home">Back to Top</a></p>

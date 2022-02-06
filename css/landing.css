@@ -531,7 +531,7 @@ header>p {
 
 .skills-img {
     max-width: 120px;
-    max-height: auto;
+    height: auto;
 }
 
 #about {
@@ -1025,7 +1025,7 @@ footer img {
 
     .skills-img {
         max-width: 250px;
-        max-height: auto;
+        height: auto;
     }
 
     .s-img {
@@ -1147,7 +1147,7 @@ footer img {
 
     .skills-img {
         max-width: 300px;
-        max-height: auto;
+        height: auto;
     }
 
     .s-img {
