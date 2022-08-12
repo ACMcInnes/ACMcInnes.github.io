@@ -8,10 +8,11 @@ body {
 }
 body.dark-theme {
   --text-colour: #eee;
-  --bg-colour: #333;
-  --banner-colour: #235690;
-  --alt-bg: #404040;
-  --panel-bg: #404040;
+  --bg-colour: #2b303d;
+  --banner-gradient: linear-gradient(to bottom right, #141E30, #243B55);
+  --banner-colour: #141E30;
+  --alt-bg: #363c4d;
+  --panel-bg: #363c4d;
 }
 
 body.dark-theme img {
@@ -22,10 +23,11 @@ body.dark-theme img {
   /* defaults to dark theme */
   body {
     --text-colour: #eee;
-    --bg-colour: #333;
-    --banner-colour: #235690;
-    --alt-bg: #404040;
-    --panel-bg: #404040;
+    --bg-colour: #2b303d;
+    --banner-gradient: linear-gradient(to bottom right, #141E30, #243B55);
+    --banner-colour: #141E30;
+    --alt-bg: #363c4d;
+    --panel-bg: #363c4d;
   }
   img {
     filter: brightness(.8) contrast(1.2);
@@ -80,6 +82,7 @@ nav {
     }
 
 header {
+    background-image: var(--banner-gradient);
     background-color: var(--banner-colour);
     height: 80%;
     justify-content: center;
@@ -161,7 +164,7 @@ header>p {
 }
 
 .header-btn:hover {
-    background-color: var(--banner-colour);
+    background-color: transparent;
     color: #fff;
     border: medium solid #fff;
 }
@@ -884,7 +887,8 @@ footer {
 
 footer img {
     margin: 1% 5% 1%;
-    width: 10%;
+    width: 5%;
+    height: auto;
 }
 
 .footer-padding {
