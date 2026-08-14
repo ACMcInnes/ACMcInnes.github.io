@@ -1,0 +1,11 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.text-centre {
+  text-align: center;
+}
+
+.fa-github {
+  color: var(--pico-contrast);
+}

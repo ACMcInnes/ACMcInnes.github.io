@@ -1,53 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-AU">
-<head>
-	<title>McInnes Design - 404</title>
-  <meta name="author" content="Andrew McInnes">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#333">
-  <link rel="shortcut icon"
-		  type="image/png"
- 		  href="../images/favicon.png">
+  <head>
+    <title>Andrew McInnes Portfolio - 404</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Brisbane based Web and Graphic Designer with
+    a passion for User Experience and User Interfaces. This portfolio showcases my
+    current work."
+    />
+    <meta name="author" content="Andrew McInnes" />
+    <meta
+      name="google-site-verification"
+      content="qFG33keN3VMP0AR3qd4amir0ZrQaT82dZ3pSjxt4pBY"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
 
-	<!--<link rel="stylesheet" href="css/template.css">-->
-	<link rel="stylesheet" href="../css/graphics.css">
+    <link rel="stylesheet" href="css/pico.indigo.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script
+      src="https://kit.fontawesome.com/395435ed25.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="container">
+      <ul>
+        <li><a href="/" class="contrast">Andrew McInnes</a></li>
+      </ul>
+      <ul>
+        <li><a href="/#skills">Skills</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#portfolio">Portfolio</a></li>
+        <li><button onclick="themeToggle()"><i class="toggle-icon fa-solid fa-circle"></i></button></li>
+      </ul>
+    </nav>
+    <main class="container text-centre">
+      <section>
+        <h2>404</h2>
+        <p>Whoops, let&apos;s get you back on track. Check out something a bit more interesting?</p>
+      </section>
+      <section>
+        <div class="grid">
+          <a
+            href="//mcinnes.design"
+            class="secondary"
+            target="_blank"
+          >
+            <article>
+                <img
+                  src="images/mcinnes_design.webp"
+                  srcset="images/mcinnes_design.webp 1x, images/mcinnes_design@2x.webp 2x"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  alt="mcinnes design logo"
+                />
+                <p>McInnes Design</p>
+            </article>
+          </a>
+          <a
+            href="//neto.mcinnes.design"
+            class="secondary"
+            target="_blank"
+          >
+            <article>
+                <img
+                  src="images/mcinnes_design.webp"
+                  srcset="images/mcinnes_design.webp 1x, images/mcinnes_design@2x.webp 2x"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  alt="mcinnes design neto logo"
+                />
+                <p>MCD - Neto Addon</p>
+            </article>
+          </a>
+          <a
+            href="//auth.mcinnes.design"
+            class="secondary"
+            target="_blank"
+          >
+            <article>
+                <img
+                  src="images/mcinnes_design.webp"
+                  srcset="images/mcinnes_design.webp 1x, images/mcinnes_design@2x.webp 2x"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  alt="mcinnes design better auth logo"
+                />
+                <p>MCD - Neto Auth</p>
+            </article>
+          </a>
+        </div>
+      </section>
+      <section>
+        <p>
+          Or head <a href="/">Home</a> to check out more stuff around here
+        </p>
+      </section>
+    </main>
 
-</head>
-<body>
+    <footer class="container text-centre">
+      <p>Website by Andrew McInnes <br> deployed using</p>
+      <p>
+        <a
+          href="https://github.com/ACMcInnes/ACMcInnes.github.io"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github fa-10x"></i>
+        </a>
+      </p>
+      <p>GitHub Pages <br> &copy <span id="year"></span> - ABN: 32 205 159 015</p>
 
-  <nav id="nav-mobile">
-    <div class="flex-row">
-      <a href="../"><img src="../images/mcinnesdesign/am-logo-nav.png" alt="Home"></a>
-			<a href="//acmcinnes.com.au">Portfolio</a>
-    </div>
-  </nav>
+      <p><a href="#">Back to Top</a></p>
+      
+      <section>
+        <button onclick="themeToggle()"><i class="toggle-icon fa-solid fa-circle"></i> Toggle Colour Scheme</button>
+      </section>
+      
+      <section class="grid">
+        <span class="offset"></span>
+        <details name="cookies">
+          <summary>Cookie Policy <i class="cookie-details fa-solid fa-cookie"></i></summary>
+          <p>This site may use some cookies for basic usage and tracking metrics.</p>
+        </details>
+        <span class="offest"></span>
+      </section>
 
-  <nav id="navbar">
-		<div class="flex-row">
-			<a href="../"><img src="../images/mcinnesdesign/am-logo-nav.png" alt="Home"></a>
-			<a href="//acmcinnes.com.au">Portfolio</a>
-    </div>
-  </nav>
+    </footer>
 
-	<header id="home" class="dark">
-    <div class="flex-container flex-centre">
-  		<div class="flex-col text-centre text-padding">
-        <h1>Page Not Found &#128533;</h1>
-        <p>Hmmm looks like I don't have the thing you are looking for?</p>
-        <p>If you think this is a mistake <a class="link" href="//mcinnes.design/#contact-top">Contact Me</a> and I will look into it.</p>
-        <p>In the meantime use the menu above to go back to McInnes Design or my Portfolio.</p>
-  		</div>
-  	</div>
-	</header>
-
-  <footer>
-    <div class="flex-container flex-centre">
-  		<div class="flex-col text-centre">
-        <p>Website created and built by <a class="link" href="//acmcinnes.com.au">Andrew McInnes</a></p>
-        <p class="footer-padding">&copy 2022 - ABN: 32 205 159 015</p>
-      </div>
-    </div>
-  </footer>
-
-</body>
+    <script src="js/custom.js"></script>
+  </body>
 </html>

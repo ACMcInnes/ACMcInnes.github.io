@@ -1,454 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-AU">
-<head>
-    <title>Andrew McInnes Portfolio - Web/Graphic/UI/UX Design</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Brisbane based Web and Graphic Designer with
-    a passion for User Experience and User Interfaces. This portfolio showcases my
-    current work.">
-    <meta name="author" content="Andrew McInnes">
-    <meta name="google-site-verification" content="qFG33keN3VMP0AR3qd4amir0ZrQaT82dZ3pSjxt4pBY" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon"
-    type="image/png"
-    href="/images/favicon.png">
+  <head>
+    <title>Andrew McInnes - Web/Graphic/UI/UX Designer</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Brisbane based Web and Graphic Designer with a passion for User Experience and User Interfaces."
+    />
+    <meta name="author" content="Andrew McInnes" />
+    <meta
+      name="google-site-verification"
+      content="qFG33keN3VMP0AR3qd4amir0ZrQaT82dZ3pSjxt4pBY"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
 
-    <!--<link rel="stylesheet" href="css/template.css">-->
-    <link rel="stylesheet" href="css/landing.css">
-    <!-- removing CAPTCHA until domain is sorted
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    -->
-</head>
-<body>
-    <!-- header navigation -->
-    <nav class="flex-row">
-        <a href="#home">Home</a>
-        <a href="#skills-top">Skills</a>
-        <a href="#about-top">About</a>
-        <a href="#portfolio-top">Portfolio</a>
-        <a href="#contact-top">Contact</a>
+    <link rel="stylesheet" href="css/pico.indigo.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script
+      src="https://kit.fontawesome.com/395435ed25.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="container">
+      <ul>
+        <li><a href="/" class="contrast">Andrew McInnes</a></li>
+      </ul>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><button onclick="themeToggle()"><i class="toggle-icon fa-solid fa-circle"></i></button></li>
+      </ul>
     </nav>
-    <!-- banner slider -->
-    <header id="home" class="flex-column">
-        <p class="slider-top">Andrew McInnes</p>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <p class="slideText">WEB DESIGNER</p>
-            </div>
-            <div class="mySlides fade">
-                <p class="slideText">GRAPHIC DESIGNER</p>
-            </div>
-            <div class="mySlides fade">
-                <p class="slideText">FRONT END DESIGNER</p>
-            </div>
-            <div class="mySlides fade">
-                <p class="slideText">UI/UX DESIGNER</p>
-            </div>
+
+    <main class="container">
+      <section>
+        <h2 id="about">About</h2>
+        <p>
+          Hi, my name is Andrew, I'm a Developer Support Specialist for an
+          Australian based e-commerce platform. My day to day includes
+          onboarding developers who wish to built out add-ons or API solutions,
+          to running through our frontend templating language.
+        </p>
+        <p>
+          When I'm not working with our Developer Partners I'm improving and
+          building out our library of online store 'themes' - built on a
+          combination of Bootstrap, jQuery, and general HTML/CSS/JavaScript.
+          With a passion for Frontend Development work, this extends into my
+          free time where I am always looking for an opportunity to hone my Web
+          Development skills.
+        </p>
+        <p>
+          Most recently I've started looking into React, a component based
+          JavaScript framework that allows page layouts to be quickly built -
+          assuming you've correctly broken down all your components to be as
+          re-usable as possible.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="skills">Skills</h2>
+        <div class="grid">
+          <article>
+            <img
+              src="images/logo_web.webp"
+              srcset="images/logo_web.webp 1x, images/logo_web@2x.webp 2x"
+              width="400"
+              height="400"
+              loading="lazy"
+              alt="web design logo"
+            />
+            <p class="text-centre">HTML / CSS / JAVASCRIPT</p>
+          </article>
+          <article>
+            <img
+              src="images/logo_graphics.webp"
+              srcset="
+                images/logo_graphics.webp    1x,
+                images/logo_graphics@2x.webp 2x
+              "
+              width="400"
+              height="400"
+              loading="lazy"
+              alt="graphic design logo"
+            />
+            <p class="text-centre">SKETCH / FIGMA</p>
+          </article>
+          <article>
+            <img
+              src="images/logo_db.webp"
+              srcset="images/logo_db.webp 1x, images/logo_db@2x.webp 2x"
+              width="400"
+              height="400"
+              loading="lazy"
+              alt="php/database logo"
+            />
+            <p class="text-centre">PHP / MySQL</p>
+          </article>
+          <article>
+            <img
+              src="images/logo_ui.webp"
+              srcset="images/logo_ui.webp 1x, images/logo_ui@2x.webp 2x"
+              width="400"
+              height="400"
+              loading="lazy"
+              alt="prototype logo"
+            />
+            <p class="text-centre">UI / UX / PROTOTYPING</p>
+          </article>
         </div>
-        <div class="flex-row flex-centre slider-bottom">
-            <div class="flex-column">
-                <a href="#portfolio-top" class="header-btn">MY PORTFOLIO</a>
-            </div>
-            <div class="flex-column">
-                <a href="#contact-top" class="header-btn-outline">CONTACT ME</a>
-            </div>
+      </section>
+
+      <section>
+        <h2 id="portfolio">Portfolio</h2>
+        <p>Check out some of the stuff I've been working on</p>
+        <div class="grid">
+          <a
+            href="//mcinnes.design"
+            class="secondary"
+            target="_blank"
+          >
+            <article>
+                <img
+                  src="images/mcinnes_design.webp"
+                  srcset="images/mcinnes_design.webp 1x, images/mcinnes_design@2x.webp 2x"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  alt="mcinnes design logo"
+                />
+                <p>McInnes Design</p>
+            </article>
+          </a>
+          <a
+            href="//neto.mcinnes.design"
+            class="secondary"
+            target="_blank"
+          >
+            <article>
+                <img
+                  src="images/mcinnes_design.webp"
+                  srcset="images/mcinnes_design.webp 1x, images/mcinnes_design@2x.webp 2x"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  alt="mcinnes design neto logo"
+                />
+                <p>MCD - Neto Addon</p>
+            </article>
+          </a>
+          <a
+            href="//auth.mcinnes.design"
+            class="secondary"
+            target="_blank"
+          >
+            <article>
+                <img
+                  src="images/mcinnes_design.webp"
+                  srcset="images/mcinnes_design.webp 1x, images/mcinnes_design@2x.webp 2x"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  alt="mcinnes design better auth logo"
+                />
+                <p>MCD - Neto Auth</p>
+            </article>
+          </a>
         </div>
-    </header>
+      </section>
+    </main>
 
-    <!-- mobile menu icon -->
-    <div class="cta">
-        <svg id="modal-toggle" class="rotate-open" width="50" height="50">
-            <circle cx="25" cy="25" r="25" fill="#4A90E2" />
-            <text fill="#fff"  font-size="48" x="9" y="40">&times;</text>
-        </svg>
-    </div>
-    <div id="cta-modal" class="modal">
-        <!-- mobile menu content -->
-        <div class="modal-content">
-            <a class="mobile-nav link nav-1" onclick="closeModal()" href="#home">Home</a>
-            <a class="mobile-nav link nav-2" onclick="closeModal()" href="#skills-top">Skills</a>
-            <a class="mobile-nav link nav-3" onclick="closeModal()" href="#about-top">About</a>
-            <a class="mobile-nav link nav-4" onclick="closeModal()" href="#portfolio-top">Portfolio</a>
-            <a class="mobile-nav link nav-5" onclick="closeModal()" href="#contact-top">Contact</a>
-        </div>
-    </div>
-
-    <!-- anchor for navigation -->
-    <div id="skills-top" class="row">
-        <div class="text-centre">
-            <p>Check out my portfolio</p>
-            <a href="#portfolio-top"><i class="down i-blk"></i></a>
-        </div>
-        <h2 class="pad-left col-12">Skills</h2>
-    </div>
-
-    <div id="skills" class="text-centre">
-        <div class="flex-row flex-centre col-12">
-            <div class="flex-column">
-                <img class="skills-img"
-                  src="images/logo_web.webp"
-                  srcset="images/logo_web.webp 1x,
-                  images/logo_web@2x.webp 2x"
-                  width="400" height="400" loading="lazy" alt="web design logo"
-                >
-                <p class="s-hidden">HTML / CSS / JAVASCRIPT</p>
-                <p class="m-hidden">HTML <br> CSS <br> JAVASCRIPT</p>
-            </div>
-            <div class="flex-column">
-                <img class="skills-img"
-                  src="images/logo_graphics.webp"
-                  srcset="images/logo_graphics.webp 1x,
-                  images/logo_graphics@2x.webp 2x"
-                  width="400" height="400" loading="lazy" alt="graphic design logo"
-                >
-                <p class="s-hidden">SKETCH / ADOBE</p>
-                <p class="m-hidden">SKETCH <br> ADOBE <br><br></p>
-            </div>
-            <div class="flex-column">
-                <img class="skills-img"
-                  src="images/logo_db.webp"
-                  srcset="images/logo_db.webp 1x,
-                  images/logo_db@2x.webp 2x"
-                  width="400" height="400" loading="lazy" alt="php/database logo"
-                >
-                <p class="s-hidden">PHP / MySQL</p>
-                <p class="m-hidden">PHP <br> MySQL<br><br></p>
-            </div>
-            <div class="flex-column">
-                <img class="skills-img"
-                  src="images/logo_ui.webp"
-                  srcset="images/logo_ui.webp 1x,
-                  images/logo_ui@2x.webp 2x"
-                  width="400" height="400" loading="lazy" alt="prototype logo"
-                >
-                <p class="s-hidden">UI / UX / PROTOTYPING</p>
-                <p class="m-hidden">UI / UX <br> PROTOTYPING<br><br></p>
-            </div>
-        </div>
-        <p>Each Project is # tagged with the appropriate skills</p>
-    </div>
-
-    <div id="about-top" class="row dark">
-        <h2 class="pad-left col-12">About</h2>
-    </div>
-    <div id="about" class="dark">
-        <div class="text-block text-block-plus">
-            <p>
-                Hi, my name is Andrew, I'm a Developer Support Specialist for an Australian based e-commerce platform.
-                My day to day includes onboarding developers who wish to built out add-ons or API solutions, to running through
-                our frontend templating language.
-            </p>
-            <p>
-                When I'm not working with our Developer Partners I'm improving and building out our library of online store 'themes' -
-                built on a combination of Bootstrap, jQuery, and general HTML/CSS/JavaScript. With a passion for Frontend Development work,
-                this extends into my free time where I am always looking for an opportunity to hone my Web Development skills.
-            </p>
-            <p>
-                Most recently I've started looking into React, a component based JavaScript framework that allows page layouts to be quickly built -
-                assuming you've correctly broken down all your components to be as re-usable as possible.
-            </p>
-            <div class="text-centre">
-                <p>Continue scrolling for an overview of my current work</p>
-                <a href="#portfolio-top"><i class="down"></i></a>
-            </div>
-        </div>
-    </div>
-
-    <div id="portfolio-top"></div>
-    <div class="portfolio">
-        <div class="main-heading">
-            <p>PORTFOLIO</p>
-        </div>
-        <div class="sub-heading">
-            <p>Web Design</p>
-        </div>
-
-        <div class="col-12 no-space relative">
-            <div class="flex-row no-space">
-                <div class="col-8 condor-panel relative">
-                    <p class="blue">#React #JavaScript #JSX #CSS in JavaScript</p>
-                    <p><a class="condor-outline" href="//mcinnes.design">VIEW PAGE</a></p>
-                    <p>*External Website</p>
-                </div>
-
-                <div class="col-4 condor-panel centre-panel">
-                    <p>REACT SANDBOX</p>
-                    <p>
-                        I decided to learn React over other JavaScript frameworks because of it's popularity
-                        and continued improvements over the years. Recent additions such as Hooks has greating improved
-                        the dynamic components that React and other JavaScript frameworks are known for.
-                    </p>
-                    <p>
-                        This is still a work in progress but the end goal is to create a responsive and fun experience for
-                        any visitors. Collecting data supplied and rendering that in exciting ways. The sandbox also utilises
-                        a dark mode toggle which takes the visitors display preference into account on first visit.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 no-space relative">
-            <div class="flex-row no-space">
-                <div class="col-4 flex-order-mob condor-panel centre-panel">
-                    <p>CONDOR MIGRATION AGENCY</p>
-                    <p>
-                        I have recently finished working on a Wordpress site for a local Migration Agency. The company
-                        went through a rebranding and wanted a fresh new website to reflect this. Building the site on Wordpress
-                        had its advantages. I was quickly able to add content to the site, then decide on a theme that worked well
-                        with the clients needs. A focus on testimonials with an impression of a skilled and competent team was to be
-                        the focus, as well as being easily contactable.
-                    </p>
-                    <p>
-                        Using Wordpress I was able to add features through the use of plug ins, even add or edit custom HTML & CSS through
-                        the use of a child theme that I created and linked to the main parent theme.
-                    </p>
-                    <p class="blue">#Wordpress #HTML #CSS #Themes #Plugins</p>
-                    <p>
-                        <a class="condor-outline" href="//condormigration.com">VIEW PAGE</a><br>
-                        *External Website - Will not link back to Portfolio
-                    </p>
-                </div>
-
-                <div class="col-8 condor-panel relative">
-                    <picture>
-                        <source media="(max-width: 650px)" srcset="images/condor_mashup_sm.webp 1x, images/condor_mashup_sm@2x.webp 2x">
-                        <source media="(max-width: 1400px)" srcset="images/condor_mashup_md.webp 1x, images/condor_mashup_md@2x.webp 2x">
-                        <source media="(min-width: 1401px)" srcset="images/condor_mashup_lg.webp 1x, images/condor_mashup_lg@2x.webp 2x">
-                        <img id="wp-img" src="images/condor_mashup_lg.png" width="1440" height="722" loading="lazy" alt="wordpress graphic">
-                    </picture>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 no-space alt-panel relative">
-            <div class="flex-row no-space">
-                <div class="col-8 bluesquare-panel relative">
-                    <img class="responsive-img flex flex-centre" src="images/bluesquare-mashup.png" alt="bluesquare logo">
-                </div>
-
-                <div class="col-4 bluesquare-panel centre-panel">
-                    <p>BLUESQUARE STORE</p>
-                    <p>
-                        After university I have kept busy creating websites and graphics for fun, while doing some
-                        casual work maintaining websites for people.
-                    </p>
-                    <p>
-                        I have created a few sites showing my work, the first is a mock store front using PHP
-                        and MySQL to grab items from a file, load them to a database then grab items depending on
-                        the users search queries. All the calls to the server are done with AJAX so the page doesn't
-                        have to reload to show the search results. The website is fully functional up to the checkout
-                        process. I'm still working on the shopping cart, at the moment you can add items or drop the entire
-                        cart. From there dropping individual items, adding quantities and a mock payment screen are planned
-                    </p>
-                    <div id="html-pointer"></div>
-                    <p>This site is custom built by me.</p>
-                    <p class="blue">#HTML #CSS #JavaScript #PHP #MySQL</p>
-                    <p><s>VIEW PAGE</s> Being re-written to use API and JavaScript instead of PHP.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 no-space relative">
-            <div class="flex-row no-space">
-                <div class="col-4 flex-order-mob condor-panel centre-panel">
-                    <p>HOLIDAYS+</p>
-                    <p>
-                        The second website I have made is a mock travel agency, built on Bootstrap 4. Using a framework such
-                        as Bootstrap or Material Design can greatly improve website creation. One draw back though is that using
-                        the default CSS means your website will look like a copy of any other website built off the framework.
-                        Therefor it can always benefit from some custom CSS styling as well, to make it stand out.
-                    </p>
-                    <p>
-                        The travel website uses a number of bootstrap components such as the carousel and card grids to easily
-                        position and display content.
-                    </p>
-                    <p class="blue">#Bootstrap4 #HTML #CSS</p>
-                    <p><a class="holiday-outline" href="/projects/holidaysplus">VIEW PAGE</a></p>
-                </div>
-
-                <div id="hp-panel" class="col-8 condor-panel relative">
-                    <picture>
-                        <source media="(max-width: 650px)" srcset="images/holidaysplus_layout_sm.webp 1x, images/holidaysplus_layout_sm@2x.webp 2x">
-                        <source media="(max-width: 1400px)" srcset="images/holidaysplus_layout_md.webp 1x, images/holidaysplus_layout_md@2x.webp 2x">
-                        <source media="(min-width: 1401px)" srcset="images/holidaysplus_layout_lg.webp 1x, images/holidaysplus_layout_lg@2x.webp 2x">
-                        <img id="hp-img" src="images/holidaysplus_layout_lg.png" width="1214" height="764" loading="lazy" alt="holidaysplus website">
-                    </picture>
-
-                    <!--
-                    <img id="accom-sm" class="img-scale absolute" src="images/accommodation-sm.png" alt="holidaysplus website">
-                    <img id="cruise-sm" class="img-scale absolute" src="images/cruise-sm.png" alt="holidaysplus website">
-                    <img id="cruise-md" class="img-scale absolute" src="images/cruise-md.png" alt="holidaysplus website">
-                    <img id="accom-md" class="img-scale absolute" src="images/accommodation-md.png" alt="holidaysplus website">
-                    <img id="package-lg" class="img-scale absolute" src="images/packages-lg.png" alt="holidaysplus website">
-                    <img id="landing-lg" class="img-scale absolute" src="images/landing-lg.png" alt="holidaysplus website">
-                    <img id="landing-sm" class="img-scale absolute" src="images/landing-sm.png" alt="holidaysplus website">
-                    -->
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 no-space alt-panel relative">
-            <div class="flex-row no-space">
-                <div class="col-8 graphics-panel relative">
-                    <img id="graphic-img" src="images/graphicportfolio2.png" alt="graphics Portfolio" style="align-self: center">
-                </div>
-
-                <div class="col-4 graphics-panel centre-panel">
-                    <p>DESIGN PORTFOLIO</p>
-                    <p>
-                        This website showcases some of my graphic design work from a course at university. First I made
-                        graphical representations of facts from the Harper's Magazine Index. These facts would include ridiculous
-                        numbers that are hard for the brain to visualise, by simplifying the number and comparing it to something
-                        most people are familiar with makes the fact far easier to understand.
-                    </p>
-                    <p>
-                        Next an Infographic of a complex process. Designed to be printed out, this Infographic showcases
-                        different sci-fi ships and how they are able to fly through space faster than lightspeed.
-                        Finally I created a magazine showcasing all the graphics that were created for the course, as well
-                        as some of my inspirations and interests.
-                    </p>
-                    <p>This site uses Bootstrap 4 as the building blocks as well as some of my own custom CSS and Javascript.</p>
-                    <p class="blue">#HTML #CSS #JavaScript #Bootstrap #JQuery #Graphics #Illustrator #Print #InDesign</p>
-                    <a class="graphics-outline" href="//acmcinnes.azurewebsites.net">VIEW PAGE</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 no-space relative">
-            <div class="flex-column flex-centre no-space">
-                <p>SANDBOX</p>
-                <p>Another Design Portfolio - currently being updated</p>
-                <a class="mcinnes-outline" href="/projects/mcinnesdesign">VIEW PAGE</a>
-            </div>
-        </div>
-
-        <div class="sketch">
-            <div id="sketch-pointer" class="flex-row col-12 no-space">
-                <div class="col-6 col-m-6 no-space">
-                    <picture>
-                        <source srcset="images/sketch-logo-dark.png" media="(prefers-color-scheme: dark)" />
-                        <source srcset="images/sketch-logo-light.png" media="(prefers-color-scheme: light)" />
-                        <img class="pad-left s-img" src="images/sketch-logo-light.png" width="2181" height="768" loading="lazy" alt="sketch logo">
-                    </picture>
-                    <div class="text-block">
-                        <p>
-                            Using the Sketch App is great for creating mock designs and prototyping interfaces,
-                            with a wide array of plugins, if you need something done, Sketch can handle it.<br><br>
-                            Mock up Travel Website, all assets created in Sketch.
-                        </p>
-                        <p class="blue">#Sketch #Prototyping #Interface #Graphics #UI/UX</p>
-                    </div>
-                </div>
-                <div class="col-6 col-m-6 no-space">
-                    <img id="sketch-img" src="images/sketch.png" width="768" height="1024" loading="lazy" alt="sketch graphic">
-                </div>
-            </div>
-        </div>
-
-        <div class="text-block">
-            <h4>University Projects</h4>
-            <h4 class="pad-left">Floor Based Navigation System (Final Year Project) - 2016</h4>
-            <p>
-                For our final year project we were tasked with creating a system that took input from
-                a physical interaction, such as touch or motion. Our team decided to solve the issue of
-                navigating around an inclosed space such as a shopping centre or town square.
-            </p>
-            <p>
-                Everyone has seen those kiosks with the touch screens and the map, search a store or place
-                and get instructions which you either have to remember or take a picture of, what if the
-                system could guide you the rest of the way?
-            </p>
-            <p>
-                This was the premise behind our project, a floor based information display that a user could
-                walk onto, select their destination by tapping their foot on it, and be guided to their location
-                through a physical guide such as LED light tracks or through their phone by scanning a QR code.
-            </p>
-            <p>
-                As well as planning and testing, my main responsibility for this project was creating the tracking
-                software that would path find between the points of interest we had chosen.
-            </p>
-            <p class="blue">#Interface #UI/UX #Prototyping #User Testing #Software</p>
-
-            <h4 class="pad-left">Augmented Reality Obstacle Course/Card Game - 2015</h4>
-            <p>
-                For this project we were required to create an Augmented Reality Experience, meaning when you launched
-                the application and viewed your surroundings through the phone camera, 3D objects will be overlaid onto
-                the video for you to interact with.
-            </p>
-            <p>
-                This was split into two parts, initial concept - were our team came up with the initial experience and
-                started to implement basic functionality. My first project was a card game that would display a 3D model
-                of the card character on screen, when the camera picked up the physical card.
-            </p>
-            <p>
-                The second part was completing a project another team had already started. For this part our team was
-                to complete an Augmented Reality Obstacle Course, were users would have a physical path to follow while
-                solving or avoiding obstacles on their phone camera.
-            </p>
-            <p class="blue">#Prototyping #User Testing #Software</p>
-
-            <h4 class="pad-left">Online Roleplaying Game - 2014</h4>
-            <p>
-                One of the first major projects I was part of, the whole class (~100 students) was tasked with creating
-                an online computer game. We were split into teams to work on seperate parts of the application, all the
-                code was managed on GitHub, so each team would fork their own version, work on their part, then integrate
-                back into the main code base. Ironing out bugs with other teams and trying not to break everything.
-            </p>
-            <p>
-                Our Team was responsible for creating a player safehouse, my part was creating the graphical assets
-                and sprites that would be displayed on screen when the player entered the house.
-            </p>
-            <p class="blue">#Graphics #Testing #Software</p>
-        </div>
-    <!-- /portfolio div -->
-    </div>
-
-    <div id="contact-top" class="dark">
-        <div class="row">
-            <h2 class="pad-left col-12">Contact</h2>
-        </div>
-        <div id="contact">
-            <p class="pad-left">Currently unavailable</p>
-            <form class="contact-form" method="POST" action="#contact-top">
-                <label for="name">Name:</label><br>
-                <input type="text" name="name" value="" disabled>
-
-                <br><br>
-                <label for="email">E-mail:</label><br>
-                <input type="text" name="email" value="" disabled>
-
-                <br><br>
-                <label for="comment">Comment:</label><br>
-                <textarea placeholder=" " name="comment" rows="12" disabled></textarea>
-
-                <br><br>
-
-                <div class="captcha-container">
-                    <input class="button" type="submit" name="submit" value="Send" style="align-self: center" disabled>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <footer>
-        <p>Website created and built by Andrew McInnes</p>
-        <p>deployed using</p>
-        <a href="https://github.com/ACMcInnes/ACMcInnes.github.io">
-            <picture>
-                <source srcset="images/github_dark.png" media="(prefers-color-scheme: dark)" />
-                <source srcset="images/github_light.png" media="(prefers-color-scheme: light)" />
-                <img src="images/github_light.png" width="120" height="120" loading="lazy" alt="My GitHub Repo">
-            </picture>
+    <footer class="container text-centre">
+      <p>Website by Andrew McInnes <br> deployed using</p>
+      <p>
+        <a
+          href="https://github.com/ACMcInnes/ACMcInnes.github.io"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github fa-10x"></i>
         </a>
-        <p>GitHub Pages</p>
+      </p>
+      <p>GitHub Pages <br> &copy <span id="year"></span> - ABN: 32 205 159 015</p>
 
-        <p><a class="link blue" href="#home">Back to Top</a></p>
-        <button class="button" onclick="themeToggle()">Toggle Colour Scheme</button>
-        <p class="footer-padding">&copy <span id="year"></span> - ABN: 32 205 159 015</p>
+      <p><a href="#">Back to Top</a></p>
+      
+      <section>
+        <button onclick="themeToggle()"><i class="toggle-icon fa-solid fa-circle"></i> Toggle Colour Scheme</button>
+      </section>
+      
+      <section class="grid">
+        <span class="offset"></span>
+        <details name="cookies">
+          <summary>Cookie Policy <i class="cookie-details fa-solid fa-cookie"></i></summary>
+          <p>This site may use some cookies for basic usage and tracking metrics.</p>
+        </details>
+        <span class="offest"></span>
+      </section>
+
     </footer>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/landing.js"></script>
+    <script src="js/custom.js"></script>
 
-</body>
+  </body>
 </html>
