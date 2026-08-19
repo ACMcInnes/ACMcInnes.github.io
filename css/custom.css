@@ -2,10 +2,74 @@
   scroll-behavior: smooth;
 }
 
+header {
+  height: 70vh;
+}
+
 .text-centre {
   text-align: center;
 }
 
 .fa-github {
   color: var(--pico-contrast);
+}
+
+.pather-section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.pather {
+  container: pather / inline-size;
+  width: 60vw;
+  position: relative;
+  svg.line {
+    width: 100cqw;
+    height: 100%;
+    path {
+      &.line-path {
+        stroke: #fff;
+      }
+      &.animate {
+        stroke: #fff;
+        display: none;
+      }
+    }
+    .trail-dash {
+      opacity: 0;
+      transition: 0.15s ease-in-out;
+      stroke: #fff;
+      stroke-linecap: round;
+      &.show {
+        opacity: 1;
+      }
+    }
+  }
+  .gsap-item {
+    position: absolute;
+    height: 0;
+    width: 0;
+    transition: 0.15s ease;
+    opacity: 0;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    img {
+      width: auto;
+				aspect-ratio: 1;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+    }
+    p {
+      width: fit-content;
+      white-space: nowrap;
+    }
+    &.show {
+      opacity: 1;
+    }
+  }
 }

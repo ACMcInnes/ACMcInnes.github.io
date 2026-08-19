@@ -37,26 +37,68 @@
       </ul>
     </nav>
 
-    <main class="container">
-      <section>
-        <h2 id="gsap">GSAP Test Page</h2>
-        <p>
-          Testing some stuff
-        </p>
+    <header>
+      <main class="container">
+        <section>
+          <h2 id="gsap">GSAP Test Page</h2>
+          <p>
+            Testing some stuff
+          </p>
 
-        <p>
-          <i class="rocket-yellow fa-solid fa-rocket" style="color: rgb(255, 212, 59);"></i>
-        </p>
-        <p>
-          <i class="rocket-green fa-solid fa-rocket" style="color: rgb(99, 230, 190);"></i>
-        </p>
-        <p>
-          <i class="rocket-blue fa-solid fa-rocket" style="color: rgb(116, 192, 252);"></i>
-        </p>
-        <p>
-          <i class="rocket-purple fa-solid fa-rocket" style="color: rgb(177, 151, 252);"></i>
-        </p>
+          <p>
+            <i class="rocket-yellow fa-solid fa-rocket" style="color: rgb(255, 212, 59);"></i>
+          </p>
+          <p>
+            <i class="rocket-green fa-solid fa-rocket" style="color: rgb(99, 230, 190);"></i>
+          </p>
+          <p>
+            <i class="rocket-blue fa-solid fa-rocket" style="color: rgb(116, 192, 252);"></i>
+          </p>
+          <p>
+            <i class="rocket-purple fa-solid fa-rocket" style="color: rgb(177, 151, 252);"></i>
+          </p>
+        </section>
+      </header>
 
+      <section class="pather-section">
+        <div class="pather">
+          <svg class="triangle" width="200" height="200" viewBox="0 0 200 200" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <!-- Blur filter definition -->
+              <filter id="blur-border" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="8" />
+              </filter>
+            </defs>
+
+            <!-- Blurred background circle acting as the soft border/glow -->
+            <circle cx="100" cy="100" r="80" fill="#fff" filter="url(#blur-border)" />
+
+            <!-- Sharp inner circle on top -->
+            <circle cx="100" cy="100" r="70" fill="#f4f4f4" stroke="#fff" stroke-width="2" />
+          </svg>
+
+          <svg class="line" viewBox="0 0 252 993"   fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 1;">
+            <path class="line-path" d="M124.5 0V123.619C124.5 138.345 131.402 152.221 143.148 161.104L175.8 185.8C196.366 201.356 191.82 233.457 167.743 242.69L50.5552 287.63C40.5931 291.45 43.3302 306.232 53.9998 306.232V306.232L159.88 315.916C174.266 317.231 187.247 325.09 195.084 337.225L242.662 410.91C247.141 417.847 249.714 425.843 250.12 434.091L250.54 442.595C251.873 469.649 230.041 493.086 203.452 498.257C118.782 514.721 -10.5439 563.725 2.04745 609.5C21.2311 679.241 178.054 650.366 182.67 719.948C184.95 754.325 69.4711 776.738 21.0032 811.433C2.90079 824.391 15.6001 845.177 37.3267 850.031L132.675 871.334C162.098 877.908 167.776 917.378 141.398 931.978V931.978C130.971 937.749 124.5 948.727 124.5 960.645V992.5" stroke="white" stroke-width="2" stroke-linejoin="round"></path>
+          </svg>
+
+          <div class="gsap-item"
+            style="top: 70cqw;left: 45cqw;">
+            <img src="https://placehold.co/100x100">
+            <p>Cool Text 1</p>
+          </div>
+          <div class="gsap-item"
+            style="top: 181cqw;left: 90cqw;">
+            <img src="https://placehold.co/100x100">
+            <p>Cool Text 2</p>
+          </div>
+          <div class="gsap-item"
+            style="top: 337cqw;left: 11cqw;">
+            <img src="https://placehold.co/100x100">
+            <p>Cool Text 3</p>
+          </div>
+          <div class="gsap-item" style="bottom: 0cqw;left: 45cqw;"></div>
+
+        </div>
       </section>
     </main>
 
@@ -91,6 +133,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MotionPathPlugin.min.js"></script>
 
     <script src="js/custom.js"></script>
     <script src="js/gsap.js"></script>
