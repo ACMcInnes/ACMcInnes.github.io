@@ -30,9 +30,21 @@
         <li><a href="/" class="contrast">Andrew McInnes</a></li>
       </ul>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li class="desktop-nav"><a href="#about">About</a></li>
+        <li class="desktop-nav"><a href="#skills">Skills</a></li>
+        <li class="desktop-nav"><a href="#portfolio">Portfolio</a></li>
+        <li class="mobile-nav">
+          <details class="dropdown">
+            <summary>
+              Menu
+            </summary>
+            <ul dir="rtl">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+          </details>
+        </li>
         <li><button onclick="themeToggle()"><i class="toggle-icon fa-solid fa-circle"></i></button></li>
       </ul>
     </nav>

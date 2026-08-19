@@ -1,3 +1,28 @@
+/* Orange color for light color scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme=light],
+:root:not([data-theme=dark]),
+:host:not([data-theme=dark]) {
+  --spotlight-primary-fill: #333;
+  --spotlight-secondary-fill: #000;
+}
+
+/* Orange color for dark color scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]),
+  :host:not([data-theme]) {
+    --spotlight-primary-fill: #f4f4f4;
+    --spotlight-secondary-fill: #fff;
+  }
+}
+/* Orange color for dark color scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme=dark] {
+  --spotlight-primary-fill: #f4f4f4;
+  --spotlight-secondary-fill: #fff;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -12,6 +37,20 @@ header {
 
 .fa-github {
   color: var(--pico-contrast);
+}
+
+.desktop-nav {
+  display: none;
+  
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+}
+
+.mobile-nav {
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .pather-section {
@@ -30,17 +69,17 @@ header {
     height: 100%;
     path {
       &.line-path {
-        stroke: #fff;
+        stroke: var(--spotlight-secondary-fill);
       }
       &.animate {
-        stroke: #fff;
+        stroke: var(--spotlight-secondary-fill);
         display: none;
       }
     }
     .trail-dash {
       opacity: 0;
       transition: 0.15s ease-in-out;
-      stroke: #fff;
+      stroke: var(--spotlight-secondary-fill);
       stroke-linecap: round;
       &.show {
         opacity: 1;

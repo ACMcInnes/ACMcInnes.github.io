@@ -80,6 +80,7 @@ gsapItems.forEach((item, index, array) => {
   mm.add("(min-width: 800px)", () => {
     // desktop sizes
     if (index === array.length -1) {
+      // last trigger
       ScrollTrigger.create({
         trigger: item,
         start: "top 70%",  // Reveal when the center of the item reaches the center of the viewport
@@ -107,7 +108,7 @@ gsapItems.forEach((item, index, array) => {
         onEnter: () => {
           item.classList.add("show");
           gsap.to(triangle, {
-            scale: 10,
+            scale: 8,
             duration: 1
           });
         }, // Scrolled down, expand spotlight
@@ -120,7 +121,7 @@ gsapItems.forEach((item, index, array) => {
         }, // Scrolled down past, shrink spotlight
         onEnterBack: () => {
           gsap.to(triangle, {
-            scale: 10,
+            scale: 8,
             duration: 1
           });
         }, // Scrolled back, expand spotlight
@@ -138,6 +139,7 @@ gsapItems.forEach((item, index, array) => {
   mm.add("(max-width: 799px)", () => {
     // mobile sizes
     if (index === array.length -1) {
+      // last trigger
       ScrollTrigger.create({
         trigger: item,
         start: "top 70%",  // Reveal when the center of the item reaches the center of the viewport
