@@ -32,7 +32,7 @@ gsap.set(lineSvgPath, {
 });
 
 const dashLength = 5; // Length of each dash
-const dotInterval = 11; // Set an interval for dash placement
+const dotInterval = 22; // Set an interval for dash placement, 11
 
 // Function to generate dashes along the path at regular intervals
 function generateDashesAlongPath() {
@@ -86,7 +86,6 @@ gsapItems.forEach((item, index, array) => {
         start: "top 70%",  // Reveal when the center of the item reaches the center of the viewport
         end: "center center",    // End at the same point
         onEnter: () => {
-          item.classList.add("show");
           gsap.to(triangle, {
             scale: 10,
             duration: 1
@@ -120,12 +119,14 @@ gsapItems.forEach((item, index, array) => {
           });
         }, // Scrolled down past, shrink spotlight
         onEnterBack: () => {
+          item.classList.add("show");
           gsap.to(triangle, {
             scale: 8,
             duration: 1
           });
         }, // Scrolled back, expand spotlight
         onLeaveBack: () => {
+          item.classList.remove("show");
           gsap.to(triangle, {
             scale: 1.5,
             duration: 1
@@ -145,7 +146,6 @@ gsapItems.forEach((item, index, array) => {
         start: "top 70%",  // Reveal when the center of the item reaches the center of the viewport
         end: "center center",    // End at the same point
         onEnter: () => {
-          item.classList.add("show");
           gsap.to(triangle, {
             scale: 5,
             duration: 1
@@ -179,12 +179,14 @@ gsapItems.forEach((item, index, array) => {
           });
         }, // Scrolled down past, shrink spotlight
         onEnterBack: () => {
+          item.classList.add("show");
           gsap.to(triangle, {
             scale: 5,
             duration: 1
           });
         }, // Scrolled back, expand spotlight
         onLeaveBack: () => {
+          item.classList.remove("show");
           gsap.to(triangle, {
             scale: 1.5,
             duration: 1

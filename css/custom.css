@@ -88,26 +88,21 @@ header {
   }
   .gsap-item {
     position: absolute;
-    height: 0;
-    width: 0;
+    height: auto;
+    width: 60%;
     transition: 0.15s ease;
-    opacity: 0;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     align-items: center;
-    img {
-      width: auto;
-				aspect-ratio: 1;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
+    h3 {
+      text-align: center;
+      color: var(--pico-background-color);
     }
     p {
-      width: fit-content;
-      white-space: nowrap;
+      opacity: 0;
+      color: var(--pico-background-color);
     }
-    &.show {
+    &.show p {
       opacity: 1;
     }
   }
