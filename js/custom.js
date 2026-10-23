@@ -1,19 +1,61 @@
 (() => {
-  let updateYear = document.getElementById("year");
-  let date = new Date().getFullYear();
-  updateYear.innerHTML = date;
+  const themeStore = (() => {
+    const localStorageTheme = localStorage?.getItem("theme") ?? "";
+    if (["dark", "light"].includes(localStorageTheme)) {
+      return localStorageTheme;
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  })();
 
-  const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  if (themeStore === "dark") {
+    document.documentElement.dataset.theme = "dark";
+  } else {
+    document.documentElement.dataset.theme = "light";
+  }
+  window.localStorage.setItem("theme", themeStore);
+
   const icons = document.querySelectorAll(".toggle-icon");
-
-  const theme = document.documentElement.dataset.theme ?? (prefersDarkMode ? "dark" : "light");
   icons.forEach((icon) => {
-    if (theme === "dark") {
+    if (themeStore === "dark") {
       icon.classList.replace("fa-circle", "fa-moon");
     } else {
       icon.classList.replace("fa-circle", "fa-sun");
     }
   });
+
+  const loader = document.getElementById("loader");
+  loader.innerHTML =
+  `loading... 0%...<br><br>
+  qQWww..<br>
+  Qww__kkc_<br>
+  QqwW5kcmVv33..<br>
+  QW5kcmV3IE1jSW5uZXM=<br>
+  AaaAWw55k..<br>
+  aaa00zz00eedd....<br>
+  Aaaan3999zz<br>
+  aAnddd...<br>
+  andrre3wwww.<br>
+  Aa___drrrr3333OO0OO...<br>
+  andr33333000_wwww<br>
+  annndre_____<br>
+  andre....w<br>
+  ... 50%..<br>
+  ardwweeeewww....<br>
+  Annwdwdrvvv3 E1jSW5uZXM=<br>
+  .... E1jSW5us..<br>
+  MccII11ii11SWww....<br>
+  nnnnzzzzzzZZZzz222zzzzz...<br>
+  MMmkkkkCcciIInnn__nsss<br>
+  IiiNnnzsss...<br>
+  ..szZXM=.. 99%<br><br>
+  _--_-..__100%...`;
+
+  const updateYear = document.getElementById("year");
+  const date = new Date().getFullYear();
+  updateYear.innerHTML = date;
 
   const cookieDetails = document.querySelector('details');
   const cookieIcons = document.querySelectorAll(".cookie-details");
@@ -30,19 +72,26 @@
 })();
 
 function themeToggle() {
-  const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const icons = document.querySelectorAll(".toggle-icon");
-  const theme = document.documentElement.dataset.theme ?? (prefersDarkMode ? "dark" : "light");
+  const theme = document.documentElement.dataset.theme;
 
   if (theme === "dark") {
     document.documentElement.dataset.theme = "light";
+    window.localStorage.setItem("theme", "light");
     icons.forEach((icon) => {
       icon.classList.replace("fa-moon", "fa-sun");
     });
   } else {
     document.documentElement.dataset.theme = "dark";
+    window.localStorage.setItem("theme", "dark");
     icons.forEach((icon) => {
       icon.classList.replace("fa-sun", "fa-moon");
     });
   }
+}
+
+function toggleMenu() {
+  const mobileMenu = document.getElementById("mobileMenu");
+  document.body.classList.toggle("fixed");
+  mobileMenu.classList.toggle("hidden");
 }

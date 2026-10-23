@@ -16,49 +16,51 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
-    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.svg" />
 
-    <link rel="stylesheet" href="css/pico.indigo.min.css" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/395435ed25.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <nav class="container">
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Andrew McInnes</a></li>
+        </ul>
+        <ul>
+          <li class="desktop-nav"><a href="/#about">About</a></li>
+          <li class="desktop-nav"><a href="/#portfolio">Portfolio</a></li>
+          <li class="desktop-nav"><a href="/#contact">Contact</a></li>
+          <li class="desktop-nav"><button onclick="themeToggle()"><i class="toggle-icon fa-solid fa-circle fa-2x"></i></button></li>
+          <li class="mobile-nav"><button onclick="toggleMenu()"><i class="fa-solid fa-bars fa-2x"></i></button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav id="mobileMenu" class="hidden">
+      <button id="close" onclick="toggleMenu()"><i class="fa-solid fa-xmark fa-2x"></i></button>
       <ul>
-        <li><a href="/" class="contrast">Andrew McInnes</a></li>
-      </ul>
-      <ul>
-        <li class="desktop-nav"><a href="/#about">About</a></li>
-        <li class="desktop-nav"><a href="/#skills">Skills</a></li>
-        <li class="desktop-nav"><a href="/#portfolio">Portfolio</a></li>
-        <li class="mobile-nav">
-          <details class="dropdown">
-            <summary>
-              Menu
-            </summary>
-            <ul dir="rtl">
-              <li><a href="/#about">About</a></li>
-              <li><a href="/#skills">Skills</a></li>
-              <li><a href="/#portfolio">Portfolio</a></li>
-            </ul>
-          </details>
-        </li>
-        <li><button onclick="themeToggle()"><i class="toggle-icon fa-solid fa-circle"></i></button></li>
-      </ul>
+        <li><a href="/">Andrew McInnes</a></li>
+        <li>|--<a href="/#about">About</a></li>
+        <li>|--<a href="/#skills">Skills</a></li>
+        <li>|--<a href="/#portfolio">Portfolio</a></li>
+        <li>|--<a href="/#contact">Contact</a></li>
+        <li>|--<a href="/#info">Information</a></li>
+        <li><button onclick="themeToggle()"><i class="toggle-icon fa-solid fa-circle fa-2x"></i></button></li>
+      </ul>        
     </nav>
-    <main class="container text-centre">
-      <section>
-        <h2>404</h2>
-        <p>Whoops, let&apos;s get you back on track. Check out something a bit more interesting?</p>
-      </section>
-      <section>
+
+     <main>
+      <section id="portfolio">
+        <h1>404 - Page Not Found</h1>
+        <p>Whoops, let&apos;s get you back on track. Check out something a bit more interesting? Or head back <a href="/">Home</a>.</p>
         <div class="grid">
           <a
             href="//mcinnes.design"
-            class="secondary"
             target="_blank"
           >
             <article>
@@ -74,8 +76,7 @@
             </article>
           </a>
           <a
-            href="//neto.mcinnes.design"
-            class="secondary"
+            href="//commerce.mcinnes.design"
             target="_blank"
           >
             <article>
@@ -87,12 +88,11 @@
                   loading="lazy"
                   alt="mcinnes design neto logo"
                 />
-                <p>MCD - Neto Addon</p>
+                <p>MCD - Commerce</p>
             </article>
           </a>
           <a
             href="//auth.mcinnes.design"
-            class="secondary"
             target="_blank"
           >
             <article>
@@ -104,47 +104,64 @@
                   loading="lazy"
                   alt="mcinnes design better auth logo"
                 />
-                <p>MCD - Neto Auth</p>
+                <p>MCD - Auth</p>
             </article>
           </a>
         </div>
       </section>
-      <section>
+
+      <section id="contact">
+        <h2>Contact</h2>
         <p>
-          Or head <a href="/">Home</a> to check out more stuff around here
+          No thanks
         </p>
       </section>
+
+      <section id="info">
+        <h2>Information</h2>
+        <p>
+        Need to know something?
+        </p>
+
+        <nav>
+          <ul>
+            <li>|--<a href="/#about">About</a></li>
+            <li>|--<a href="/#skills">Skills</a></li>
+            <li>|--<a href="/#portfolio">Portfolio</a></li>
+            <li>|--<a href="/#contact">Contact</a></li>
+          </ul>        
+        </nav>
+
+      </section>
+
     </main>
 
-    <footer class="container text-centre">
-      <p>Website by Andrew McInnes <br> deployed using</p>
-      <p>
-        <a
-          href="https://github.com/ACMcInnes/ACMcInnes.github.io"
-          target="_blank"
-        >
-          <i class="fa-brands fa-github fa-10x"></i>
-        </a>
-      </p>
-      <p>GitHub Pages <br> &copy <span id="year"></span> - ABN: 32 205 159 015</p>
-
-      <p><a href="#">Back to Top</a></p>
-      
+    <footer>
       <section>
-        <button onclick="themeToggle()"><i class="toggle-icon fa-solid fa-circle"></i> Toggle Colour Scheme</button>
-      </section>
-      
-      <section class="grid">
-        <span class="offset"></span>
+        <p>Website by <strong>Andrew McInnes</strong> <br> deployed using</p>
+        <p>
+          <a
+            href="https://github.com/ACMcInnes/ACMcInnes.github.io"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github fa-10x"></i>
+          </a>
+        </p>
+        <p>GitHub Pages <br> &copy <span id="year"></span> - ABN: 32 205 159 015</p>
+
+        <p><a href="#">Back to Top</a></p>
+
         <details name="cookies">
           <summary>Cookie Policy <i class="cookie-details fa-solid fa-cookie"></i></summary>
-          <p>This site may use some cookies for basic usage and tracking metrics.</p>
+          <p>This site may use some cookies for basic usage and tracking metrics</p>
         </details>
-        <span class="offest"></span>
+        <p class="footer-theme">
+          <button onclick="themeToggle()"><i class="toggle-icon fa-solid fa-circle fa-2x"></i></button>
+        </p>
       </section>
-
     </footer>
 
     <script src="js/custom.js"></script>
+
   </body>
 </html>
