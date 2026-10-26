@@ -34,24 +34,15 @@
   QqwW5kcmVv33..<br>
   QW5kcmV3IE1jSW5uZXM=<br>
   AaaAWw55k..<br>
-  aaa00zz00eedd....<br>
-  Aaaan3999zz<br>
   aAnddd...<br>
-  andrre3wwww.<br>
-  Aa___drrrr3333OO0OO...<br>
-  andr33333000_wwww<br>
-  annndre_____<br>
-  andre....w<br>
-  ... 50%..<br>
-  ardwweeeewww....<br>
-  Annwdwdrvvv3 E1jSW5uZXM=<br>
-  .... E1jSW5us..<br>
-  MccII11ii11SWww....<br>
-  nnnnzzzzzzZZZzz222zzzzz...<br>
-  MMmkkkkCcciIInnn__nsss<br>
-  IiiNnnzsss...<br>
-  ..szZXM=.. 99%<br><br>
-  _--_-..__100%...`;
+  Aa___mV3IE1jSWuuu...<br>
+  _._-_... 52%..<br>
+  _E1jSW5uZXM=<br>
+  .... E1Li1jjSW5us.. McI1jjSWww5uzs_<br>
+  _---A__.._nnn5Suzzzz... MMmkkCcciIInn__nsss<br>
+  IiiNnnz5ss...<br>
+  __..___----__..szZXM=.. 99%<br><br>
+  loading... 100%...`;
 
   const updateYear = document.getElementById("year");
   const date = new Date().getFullYear();

@@ -7,6 +7,16 @@
   --spacer: 0.5rem;
   --max-width: 1440px;
   --border-colour: rgb(from var(--text) r g b / 0.5);
+
+  @supports (width: -moz-available) {
+    --stretch: -moz-available;
+  }
+  @supports (width: -webkit-fill-available) {
+    --stretch: -webkit-fill-available;
+  }
+  @supports (width: stretch) {
+    --stretch: stretch;
+  }
 }
 
 [data-theme=dark] {
@@ -39,6 +49,12 @@ header {
   border-block-end: thin solid var(--border-colour);
   nav {
     border-block-start: thin solid var(--border-colour);
+  }
+  nav ul:first-child {
+    flex-grow: 1;
+    li {
+      width: 100%;
+    }
   }
 }
 
@@ -101,12 +117,15 @@ nav li :where(a, [role=link]) {
   ul {
     flex-direction: column;
     align-items: start;
-    width: stretch;
+    width: var(--stretch);
     margin-inline: calc(var(--spacer) * 2);
     padding-inline: var(--spacer);
     border: thin solid var(--border-colour);
     & > li:first-child {
       margin-top: calc(var(--spacer) * 0.7);
+    }
+    li {
+      width: 100%;
     }
   }
   #close {
@@ -158,20 +177,21 @@ button {
 }
 
 #banner {
-  width: stretch;
+  width: var(--stretch);
   border-inline: thin solid var(--border-colour);
   border-block-end: thin solid var(--border-colour);
   padding-inline: calc(var(--spacer) * 2);
 }
 
 #about {
-  width: stretch;
+  width: var(--stretch);
   border: thin solid var(--border-colour);
   margin-top: calc(var(--spacer) * 2);
   padding-inline: calc(var(--spacer) * 2);
 }
 
 #skills {
+  width: var(--stretch);
   margin-top: calc(var(--spacer) * 2);
   border: thin solid var(--border-colour);
   h2 {
@@ -203,9 +223,9 @@ button {
 }
 
 #portfolio {
+  width: var(--stretch);
   border-inline: thin solid var(--border-colour);
   border-block-end: thin solid var(--border-colour);
-  width: stretch;
   h1, h2 {
     padding-inline: calc(var(--spacer) * 2);
   }
@@ -233,18 +253,18 @@ button {
 }
 
 #contact {
+  width: var(--stretch);
   margin-top: calc(var(--spacer) * 2);
   border: thin solid var(--border-colour);
   padding-inline: calc(var(--spacer) * 2);
-  width: stretch;
 }
 
 #info {
+  width: var(--stretch);
   margin-top: calc(var(--spacer) * 2);
   border-block-start: thin solid var(--border-colour);
   border-inline: thin solid var(--border-colour);
   padding-inline: calc(var(--spacer) * 2);
-  width: stretch;
   nav {
     margin: 0;
     padding: 0;
@@ -253,6 +273,10 @@ button {
     ul {
       flex-direction: column;
       align-items: start;
+      flex-grow: 1;
+      li {
+        width: 100%;
+      }
     }
   }
 }
